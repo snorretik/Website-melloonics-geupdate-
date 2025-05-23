@@ -1,0 +1,10 @@
+ga naar de betreffende map
+
+python -m venv venv
+-
+Set-ExecutionPolicy Unrestricted -Scope Process
+venv\Scripts\activate.ps1
+
+en
+
+deactivate
