@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a id="currentLink" href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>
+    <main id="container" role="main">
+        <article>
+            <h3>The Finished Product</h3>
+            <p>Ha, welkom op mijn website. Ik heb deze website al een tijdje online. Met een miniem aantal bezoekers. Dat is niet erg voorlopig, ik ben niet heel happig met het delen van deze url voor mensen om te bekijken</p>
+            <p>Het is een beetje een speelplek waar ik wat dingetjes uit kan proberen. De domeinnaam in principe ook. Melloonics blijft nog wel even (punt nl, nog lange tijd). Het kan op den duur gaan fungeren als een portfolio website.</p>
+            <p>Hij is al een beetje ingedeeld als een portfolio website. Maar ik heb nog niet heel veel werk wat ik kan laten zien waar ik trots op ben.</p>
+            <p>Het lijkt misschien voor een buitenstaander zelfs dat deze website voor een groot deel inactief is. Alhoewel ik wel wekelijks of tweewekelijks de blog bijhoud.</p>
+            <p>Qua ontwerp is ie weinig veranderd sinds ie voor het eerst online kwam.</p>
+            <p>Ik blog ook regelmatig over mentale gezondheid (indirect). Ik heb daar zelf wat uitdagingen in te overwinnen. Dit is mijn struggle als hobbyist webdeveloper waar ik dan verslag van doe. Soms jammer ik alleen maar een beetje over motivatieproblemen. Het zij zo.</p>
+            <p>Maar het is nog steeds een interesse die ik heb. Af en aan. En ik blijf er mee rommelen. En tot die tijd blijft deze website online.</p>
+            <p>Groeten.</p>
+        </article>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <!-- <div id="fillup">
+        <label id="fillUpLabel">Empty</label>
+    </div>
+    <footer>
+        <label>Dit is een test (van positie).</label>
+    </footer> -->
+</body>
+</html>

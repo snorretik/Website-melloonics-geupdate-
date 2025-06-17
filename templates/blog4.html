@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/blog.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a id="currentLink" href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>Vrijdag 23 mei 2025</h3>
+            <p>Hallo alweer. Ik heb een update voor jullie.</p>
+            <p>Beschut werk duurt nog een tijdje. Ik kan daar op zijn vroegst 1 juli mee beginnen. Jammergenoeg gaan we 1 juni niet meer halen.</p>
+            <p>Blijkbaar starten zij altijd op de eerste van de maand. En ik zou mijn handtekening nog onder een plan voor het UWV moeten zetten.</p>
+            <p>Mijn contactpersoon gaat in juli echter ook drie weken op vakantie. Waardoor ik misschien als er geen waarnemer aangesteld kan worden ik pas in augustus kan beginnen.</p>
+            <p>En dan is het ook nog eens zo dat als ik eenmaal begin, ik twee maanden met behoud van uitkering werk. En dan pas na een loonwaardemeting in betaalde dienst treed.</p>
+            <p>Dan is afhankelijk van hoe goed ik ben vergeleken met een reguliere medewerker bekend hoeveel subsidie zij voor mij kunnen krijgen en hoeveel waarde ik zelf voor het bedrijf kan zijn.</p>
+            <p>Dat duurt allemaal dus nog even. Maar ik heb nog meer nieuws.</p>
+            <p>Ik ga toch nog wat werk doen met betrekking tot mijn website, onder andere. Ik experimenteer met deze website, ook als portfolio.</p>
+            <p>Maar soms zal ie de komende tijd misschien weer even offline zijn. Ik probeer de website natuurlijk zo snel mogelijk weer online te krijgen. Maar soms duurt dat even.</p>
+            <p>En dus wil ik jullie vragen daarop voorbereid te zijn. Hij gaat mogelijk offline. Ik moet hem namelijk weer verhuizen van strato naar een cloud oplossings dienst genaamd Heroku.</p>
+            <p>Het kan zijn dat dat proces niet zonder slag of stoot gaat. Dus dan zijn jullie voorbereid. Natuurlijk is een up to date blog het leukste om te lezen. Maar als ie tijdelijk offline is, weet dan dat dat ook een beetje het doel is van de website. Namelijk dingen uitproberen, instellen, regelen. En oververhuizen als ik op een andere dienst over moet gaan.</p>
+            <p>Anders zou deze website niet eens online staan. Dus haak alsjeblieft niet af. Maar heb geduld. Ik weet dat ik een paar lezers heb, en ik vind dat toch altijd wel leuk om te zien op google analytics =P. Ja ja, dat zit ook in deze website verwerkt.</p>
+            <p>Heb geduld, en wees blij. Er zit toch nog bewegingen in mijn ICT projecten.</p>
+            </article>
+        <div id="pages">
+            <a 
+             class="paginaBlog">Pag. </a><a 
+             class="paginaBlog" href="blog1">1</a><a 
+             class="paginaBlog" href="blog2">2</a><a
+             class="paginaBlog" href="blog3">3</a><a 
+             class="paginaBlog" href="blog4">4</a><a 
+             class="paginaBlog" href="blog5">5</a><a 
+             class="paginaBlog" href="blog6">6</a><a 
+             class="paginaBlog" href="blog7">7</a><a 
+             class="paginaBlog" href="blog8">8</a>
+            <a style="color: black;">></a>
+        </div>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <aside>
+        <h5>Januari 2025</h5>
+        <h5>Februari 2025</h5>
+        <h5>Maart 2025</h5>
+        <h5>April 2025</h5>
+        <h5>Mei 2025</h5>
+        <h5>Juni 2025</h5>
+        <h5>Juli 2024</h5>
+        <h5>Augustus 2024</h5>
+        <h5>September 2024</h5>
+        <h5>Oktober 2024</h5>
+        <h5>November 2024</h5>
+        <h5>December 2024</h5>
+    </aside>
+</body>
+</html>

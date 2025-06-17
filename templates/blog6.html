@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/blog.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a id="currentLink" href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>Zondag 27 april 2025</h3>
+            <p>Ahh, net toen ik dacht dat het dood was, ben ik weer begonnen. Ik kan het toch niet laten blijkbaar. Ik had weer zin om iets te maken.</p>
+            <p>En ik toverde een oude vraag terug waar ik ooit ben blijven hangen toen ik aan het spelen was met code, namelijk met Python en TKinter.</p>
+            <p>Ik heb daar nu eindelijk een bruikbare lead in gevonden. Maar ik realiseerde me ineens iets. Ik was vandaag begonnen met het proces van programmeren. En ik ben al lekker bezig hoor, deze middag. Maar ik heb nog geen regel geprogrammeerd.</p>
+            <p>Niet echt...</p>
+            <p>Ik merk dat er nog heel wat bij komt kijken voordat je je eerste regel code geschreven hebt. En ik wil het liefste het proces van coderen starten, in plaats van maar gewoon beginnen in het blinde weg te typen.</p>
+            <p>Ik moet het onderzoeksproces dus de volgende keer weer starten.</p>
+            <p>En ik denk dat ik mezelf ook toe ga staan om voortaan code van een ander te gebruiken. Omdat je anders het wiel zelf elke keer moet uitvinden.</p>
+            <p>Je moet namelijk ook kundig worden in het lezen van andermans code. En daarop verder borduren, ja... Dat kan wel eens een heel wat betere stap zijn dan elke keer op nul beginnen.</p>
+            <p>Je hebt toch namelijk nog steeds inzicht nodig. Dat sowieso. Om het geheel te kunnen intepreteren, weten wat ie doet. Weten wat je wilt dat ie anders doet.</p>
+            <p>Misschien kan ik in het vervolg beter met bestaande code beginnen in plaats van alles vanaf nul zelf op te starten. Zeker met bekendere projecten als een webcrawler en dergelijke kan dat nuttig zijn.</p>
+            <p>Dat zijn wel stappen hoor! Om dat mezelf toe te staan. In eerste instantie wilde ik dat niet.</p>
+            <p>Maar misschien kan het me helpen dat eerste verrekte begin te maken, excuses.</p>
+            </article>
+        <div id="pages">
+            <a 
+             class="paginaBlog">Pag. </a><a 
+             class="paginaBlog" href="blog1">1</a><a 
+             class="paginaBlog" href="blog2">2</a><a
+             class="paginaBlog" href="blog3">3</a><a 
+             class="paginaBlog" href="blog4">4</a><a 
+             class="paginaBlog" href="blog5">5</a><a 
+             class="paginaBlog" href="blog6">6</a><a 
+             class="paginaBlog" href="blog7">7</a><a 
+             class="paginaBlog" href="blog8">8</a>
+            <a style="color: black;">></a>
+        </div>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <aside>
+        <h5>Januari 2025</h5>
+        <h5>Februari 2025</h5>
+        <h5>Maart 2025</h5>
+        <h5>April 2025</h5>
+        <h5>Mei 2025</h5>
+        <h5>Juni 2025</h5>
+        <h5>Juli 2024</h5>
+        <h5>Augustus 2024</h5>
+        <h5>September 2024</h5>
+        <h5>Oktober 2024</h5>
+        <h5>November 2024</h5>
+        <h5>December 2024</h5>
+    </aside>
+</body>
+</html>

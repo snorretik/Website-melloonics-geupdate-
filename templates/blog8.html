@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/blog.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a id="currentLink" href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>Zondag 23 maart 2025</h3>
+            <p>Nou, ik heb niet veel nieuws.</p>
+            <p>Er loopt nog steeds een traject richting beschut werk. Ik heb er al een gesprek over gehad, waarin ik goedkeuring heb gekregen voor de indicatie.</p>
+            <p>Echter met ICT komt bijna niks meer van de grond. Ik ben geabboneerd op een subreddit over programmeren. En daarin werd een verhaal verteld van hoe het echt eigenlijk onmogelijk werk is.</p>
+            <p>Om überhaupt tot coderen te komen is zoveel nodig. Zoveel instellingen. Zoveel dependencies had deze persoon het over. Het updaten van al die individuele componenten. Het weten wat te doen als een van die zoveel dingen het niet doet.</p>
+            <p>Ik herken het. Er is zoveel onzin allemaal voor nodig. Ook de programma's die het makkelijker maken vragen ook allemaal hun eigen onzin. Er is gewoon niet aan te ontkomen.</p>
+            <p>Docker zou dan het laatste zijn wat dingen makkelijker maakte. Maar ook daarin heb je setup instellingen die op honderden manieren fout kunnen gaan.</p>
+            <p>Dit was dus een programmeur die al 15 jaar in het vak aan het werk was. En inmiddels het echt spuugzat is. En dat is dan nu pas.</p>
+            <p>Wat mij dus doet realiseren, dit is geen toevalstreffer. Dat ik hier zo lang en vaak op vast loop... Dit ervaren anderen ook zo. Dit hoort er dus blijkbaar bij.</p>
+            <p>En dan zou ik echt een hele grote hekel aan mijn werk krijgen, denk ik nu ineens.</p>
+            <p>Blijkbaar is dit geen uitzondering. Ik kom het ook al tegen.</p>
+            <p>"This is why we get paid the big bucks". Well guess what, ik krijg niks. Ik probeer een begin te maken hierin. En het is eindeloos stroperig. Het kost zoveel moeite je een weg vooruit te werken.</p>
+            <p>Dus uhmm... ik ben het wel even aan het heroverwegen. Of ik echt dit vakgebied in wil gaan.</p>
+            <p>Nou ja mensen, dat is waar ik gebleven ben. Dat is de update voor nu. Niks op ICT gebied meer de laatste tijd. Maar goed, het is even pauze op dit moment.</p>
+            </article>
+        <div id="pages">
+            <a 
+             class="paginaBlog">Pag. </a><a 
+             class="paginaBlog" href="blog1">1</a><a 
+             class="paginaBlog" href="blog2">2</a><a
+             class="paginaBlog" href="blog3">3</a><a 
+             class="paginaBlog" href="blog4">4</a><a 
+             class="paginaBlog" href="blog5">5</a><a 
+             class="paginaBlog" href="blog6">6</a><a 
+             class="paginaBlog" href="blog7">7</a><a 
+             class="paginaBlog" href="blog8">8</a>
+            <a style="color: black;">></a>
+        </div>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <aside>
+        <h5>Januari 2025</h5>
+        <h5>Februari 2025</h5>
+        <h5>Maart 2025</h5>
+        <h5>April 2025</h5>
+        <h5>Mei 2025</h5>
+        <h5>Juni 2025</h5>
+        <h5>Juli 2024</h5>
+        <h5>Augustus 2024</h5>
+        <h5>September 2024</h5>
+        <h5>Oktober 2024</h5>
+        <h5>November 2024</h5>
+        <h5>December 2024</h5>
+    </aside>
+</body>
+</html>

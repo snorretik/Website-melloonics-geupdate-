@@ -3,3 +3,15 @@ Oké nou, ik wil gaan programmeren hier.
 Het is een beetje in het wilde weg programmeren. Python. Ik ben er nog niet zo bekend mee.
 
 Vanuit documentatie misschien.
+
+-
+
+Oké nou, ik ben begonnen. En ik heb mijn hello world app runnende gekregen.
+
+Nu komt er al uitleg over templates. En de Jinja2 Template Renderer.
+
+En daar word ook verwezen naar de documentatie van Jinja. Die heb ik nou ook geopend.
+
+Dat is goed om te weten voor een volgende keer.
+
+

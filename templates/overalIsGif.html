@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/artikelen.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>"Overal is gif"</h3>
+            <p>Sorry, maar ik lees een voor mij alarmerend bericht over de slaapkamers van Nederland. Die zitten vol met pesticiden. Slaapkamers. Dat betekent dus dat het overal zit. Overal is gif.</p>
+            <p>En ik kijk waar het op gericht is. Op die kleine beestjes. En ik vind het gewoon verschrikkelijk dat het zo uit de bocht vliegt. Alles wat wij doen als mensen is schadelijk voor de natuur.</p>
+            <p>Alles wat wij doen.</p>
+            <p>Het gaat allemaal kapot. En wij zijn de oorzaak. We zouden onszelf grootschalig de oorlog moeten verklaren op deze manier. Nee, maar dat is wel een van de eerste dingen die je dan denkt. Niks vluchtelingen meer. Mensen moeten zwaar uitgedund worden. En we zijn al aan zo'n golf bezig. Met vergrijzing. Maar het kan niet snel genoeg gaan.</p>
+            <p>We moeten zeer hard op de rem trappen. De overheid zou zijn vergunningen in moeten trekken voor de chemiesectoren.</p>
+            <p>Overal zou moeten worden gestopt.</p>
+            <p>Dit gaat zwaar de perken te buiten. De natuur is het enige wat we hebben. En wij lopen het maar allemaal opnieuw in te delen en dergelijke. We verpesten het helemaal.</p>
+            <p>Ik heb gebeden vandaag, voor de wereld. En gek genoeg zijn heel veel van de "zekerheden" die wij als mens denken te hebben in het leven zoals een dak boven ons hoofd, eten en drinken, nou net de dingen waar het hem in schort bij ons. Ons voedsel. Kleding.</p>
+            <p>Alle activiteiten die wij ontplooien omdat wij tijd over hebben. Het gaat allemaal kapot.</p>
+            <p>Op lange termijn zouden wij nog van betekenis kunnen zijn voor de natuur. Maar dit gaat helemaal fout zo. Dit is niet leuk meer.</p>
+            <p>Geloof... en de dingen die wij van God krijgen. Zijn verbonden aan landbouw. En een paar inzichten in hoe de natuur werkt. Wij gingen uit van een oeroude vader. En ik hoop nog steeds me tot geloof te kunnen wenden.</p>
+            <p>Maar ik hoop... dat het niet tegenstrijdig is met elkaar. Indirect al. Geloof, en een betere wereld.</p>
+            <p>Ik hoop dat er echt een God is die ook hier allemaal controle over heeft. Want het dreigt echt... Ik wil niet... Ik heb geen kinderen. Krijg ik waarschijnlijk ook niet. En in die zin zou ik dan kunnen zeggen "dan interesseert het me ook allemaal niks". Maar dat gaat mij te ver.</p>
+            <p>De natuur. Dat is misschien wel het belangrijkste wat er is.</p>
+            <p>Edit: Nee natuurlijk is oorlog de oplossing niet. Dat genereert zoveel haat. Op een gegeven moment vergiftigen mensen de boel bewust, ontstaat er biologische oorlogsvoering. Noem het maar op. Dan maakt de mens echt alles kapot. Het kan ook een stroomversnelling in gaan met oorlog.</p>
+            <p>Ik weet niet wat de oplossing is. Maar we moeten minderen. Minder actief zijn, minder productief. Luier, bij wijze van spreke. Calm the f down. Er is geen makkelijke oplossing voor. Maar als we echt logisch gaan nadenken...</p>
+            <p>We associëren insecten misschien nog teveel met vies en ziektes indirect dus ook. Maar dat kunnen we veel gerichter aanpakken dan overal gif te verspreiden. Het is nergens voor nodig. We kunnen dit slimmer oplossen.</p>
+            <p>Als het indirect echt om het insect als ziektedrager gaat, dan moeten we dat aanpakken.</p>
+            <p>Ik hoop gewoon dat het goed gaat.</p>
+        </article>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+</body>
+</html>

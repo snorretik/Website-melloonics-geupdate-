@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/blog.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index.html" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a id="currentLink" href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>Zondag 15 juni 2025</h3>
+            <p>Oké nou, ik heb dus nieuws gekregen wanneer mijn werk van start gaat. Dat is in augustus.</p>
+            <p>Maar tegelijkertijd had ik zoiets van nee ik heb geen tijd om tot augustus te wachten en niks te doen! Ik heb wel betere dingen te doen!</p>
+            <p>En ineens werd ik wakker. Er zijn nog volop dingen die ik wil doen en wil bereiken. Ik wil ook met ICT aan de slag en daar vorderingen in maken. Ik heb geen tijd tot augustus om niks te doen.</p>
+            <p>Dat is simpelweg een te grote verspilling. Ik kan dat niet verkopen aan mezelf. Ik denk dat ik dan simpelweg helemaal gek word van frustratie. Ik heb niet het geduld daarvoor.</p>
+            <p>Dus ik ben ineens geactiveerd. Van hey dat gaan we zo niet doen.</p>
+            <p>En ik heb nou wat dingetjes besteld. Game equipment. Zodat ik verder met mijn hobbies aan de slag kan. En ik ben voornemens om misschien zelfs even twee maandjes een virtueel kantoor te huren. Om te kijken hoe dat gaat met een Kamer van Koophandel inschrijving enzovoort.</p>
+            <p>Ik moet iets doen! Ik kan niet stil blijven zitten. Daar heb ik nu teveel nervositeit voor gekregen. Ik kan dit niet stil aan mij voorbij laten gaan.</p>
+            <p>Dus, er gaat iets gebeuren tot aan augustus. Tussen nu en augustus. Wat weet ik nog niet. Maar ik heb ergens in mijn hoofd mijn zinnen op gezet. Ik kan dit niet zomaar passief voorbij laten gaan.</p>
+            <p>En sindsdien verveel ik me ook niet meer. Ik ben aan het broeden, op een plannetje. Om mijn werk aan ICT af te maken. Of in ieder geval het backend van mijn blog op gang te hebben gekregen.</p>
+            <p>Ik heb al wat nodige ruimte vrijgemaakt op een website waar ik naar over wil verhuizen. Maar alles stap voor stap. Maar ohhh wat kan dat frustrerend zijn zeg. Zoveel tijd rekken. Totdat je er helemaal genoeg van hebt.</p>
+            <p>Er gaat iets gebeuren. Ik ben geactiveerd. Ik ga niet meer stil zitten. Ik verrek het gewoon. En ik zal niet mijn eigen ruiten ingooien door te denken dan begin ik wel zelfstandig en zeg ik op termijn dit traject weer af.</p>
+            <p>Maar ohhw ohhw. Eigenlijk duurt dit te lang. Maar goed. Ik kan hier dus niet op gaan zitten wachten. Dat was duidelijk. Wat ik dan wel ga doen weet ik nog niet. Ook die investeringen in mijn hobbies kunnen al een deel van de oplossing zijn.</p>
+            <p>Maar uhm... ja, ik ben er helemaal klaar mee. Mijn tijd is ook iets waard. En ik ben vastbesloten dat eens te bewijzen. En te bewijzen dat ik niet afhánkelijk van hen ben om mezelf bezig te kunnen houden.</p>
+            <p>En dat is een hele mooie ontwikkeling. Dat is precies wat er moest gebeuren. Dus ik omarm het. Ik ben weer wakker, weer bij de les. En het eeuwige tijdsverspillen is nou voorbij.</p>
+            </article>
+        <div id="pages">
+            <a 
+             class="paginaBlog">Pag. </a><a 
+             class="paginaBlog" href="blog1">1</a><a 
+             class="paginaBlog" href="blog2">2</a><a
+             class="paginaBlog" href="blog3">3</a><a 
+             class="paginaBlog" href="blog4">4</a><a 
+             class="paginaBlog" href="blog5">5</a><a 
+             class="paginaBlog" href="blog6">6</a><a 
+             class="paginaBlog" href="blog7">7</a><a 
+             class="paginaBlog" href="blog8">8</a>
+            <a style="color: black;">></a>
+        </div>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <aside>
+        <h5>Januari 2025</h5>
+        <h5>Februari 2025</h5>
+        <h5>Maart 2025</h5>
+        <h5>April 2025</h5>
+        <h5>Mei 2025</h5>
+        <h5>Juni 2025</h5>
+        <h5>Juli 2024</h5>
+        <h5>Augustus 2024</h5>
+        <h5>September 2024</h5>
+        <h5>Oktober 2024</h5>
+        <h5>November 2024</h5>
+        <h5>December 2024</h5>
+    </aside>
+</body>
+</html>

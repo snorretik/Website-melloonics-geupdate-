@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/overMij.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent"> 
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a href="blog1" class="linkInc">Blog</a>
+            <a id="currentLink" href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>Over mij:</h3>
+            <p>Hallo, mijn naam is Niels. En ik ben 35 jaar. Een aantal jaren geleden heb ik een keer een cursus programmeren gevolgd, met de bedoeling om daar werk in te vinden. Dat lukte niet.</p>             
+            <p>Toen heb ik dit vakgebied een aantal jaren lang bijgehouden als hobby min of meer, om er ooit misschien nog iets professioneels mee te doen.</p>
+            <p>Op enig moment accelereerde mijn leerproces. Dit is echter toch weer wat afgenomen in snelheid. Een van de redenen was een cursus waar ik mee bezig ben waar op enig moment van afsplitste om het zelf te proberen verder te doen.</p>
+            <p>Ik ben echter toch weer terug op datzelfde punt gekomen, maar dat is een technisch verhaal.</p>
+            <p>Hoe dan ook, of mijn leertempo nou snel of langzaam is. Mijn doel is op den duur om hiervan mijn portfolio website te maken. En om met dit domein wat te spelen. En verslag te doen van mijn ICT projecten.</p>
+            <p>En dat is dus wat je hier de komende tijd kan verwachten. Blijf in de buurt! Ik hou je op de hoogte.</p>
+        </article>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    
+</body>
+</html>

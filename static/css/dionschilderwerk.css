@@ -1,0 +1,156 @@
+#floatLinkBack {
+    background-color: black;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#floatLinkBack a {
+    color: lightgrey;
+}
+
+#floatLinkBack:hover a {
+    color: white
+}
+
+#topPage {
+    height: 100px;
+    text-align: center;
+    background-color: lightblue;
+    border-style: solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-width: 1px;
+    
+}
+
+#venster1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    display: flex;
+    border-bottom-style: solid;
+    border-width: 2px;
+    flex-direction: row;
+}
+
+#venster2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    display: flex;
+    border-bottom-style: solid;
+    border-width: 2px;
+    flex-direction: row;
+}
+
+#linksHelft {
+    height: 500px;
+    width: 400px;
+}
+
+#rechtsHelft {
+    height: 500px;
+    width: 400px;
+}
+
+#bundel {
+    display: flex;
+    flex-direction: row;
+}
+
+#vak1 {
+    height: 250px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+}
+
+#vak2 {
+    margin-left: auto;
+    margin-right: 5px;
+    height: 150px;
+    width: 185px;
+    background-color: lightgrey;
+}
+
+#vak3 {
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 150px;
+    width: 105px;
+    background-color: lightgrey;
+}
+
+#vak4 {
+    width: 300px;
+    height: 460px;
+    background-color: lightgreen;
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+#vak5 {
+    width: 300px;
+    height: 460px;
+    background-color: lightgreen;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+#vak6 {
+    height: 250px;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+}
+
+#vak7 {
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 150px;
+    width: 105px;
+    background-color: lightgrey;
+}
+
+#vak8 {
+    margin-left: 5px;
+    margin-right: auto;
+    height: 150px;
+    width: 185px;
+    background-color: lightgrey;
+}
+
+#divButton {
+    margin-left: auto;
+    margin-right: 5px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#divButton2 {
+    margin-left: 5px;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#button1 {
+    width: 300px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+#button2 {
+    width: 300px;
+    height: 40px;
+    margin-left: 0px;
+}

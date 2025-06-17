@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/blog.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a id="currentLink" href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>Woensdag 9 april 2025</h3>
+            <p>Oké nou, ik ben nog steeds niet helemaal klaar met ICT. Er zat wel een punt aan te komen waar ik af haakte. Maar ik heb toch ook nog interesse.</p>
+            <p>Er is een nieuw fenomeen: vibe coden. Sommige mensen vinden het verschrikkelijk. Maar het is coderen met AI als assistent. En je zou er mogelijkerwijs veel meer mee kunnen doen dan dat je normaal in je eentje gedaan krijgt.</p>
+            <p>Althans zo vat ik het op. Dat is wat ik er van meegekregen heb. De belofte is groot. Je zou echt een boost in productiviteit kunnen ervaren. Maar de realiteit zal anders zijn.</p>
+            <p>Weet je wat het ook simpelweg is?? Een tekort aan verbeeldingskracht. Wat zou ik nou echt graag geschreven willen hebben?? Welk programma?? Alles bestaat al.</p>
+            <p>Overal waar vraag naar is, waar een beetje op verdient kan worden. En dat is zo'n beetje alles, bestaat al. Overal is wel markt voor.</p>
+            <p>Ik weet niet wat het dan nog is?? En hoogstwaarschijnlijk allemaal nog gratis ook! Met een beetje kunde kan je overal wel een gratis versie van naar boven toveren.</p>
+            <p>Tja... ik weet het niet hoor. Maar het is natuurlijk leuk. Dat het zoveel werk van je uit handen zou kunnen halen. Artificial Intelligence.</p>
+            <p>Dus soms leeft het nog op... dan denk ik zou ik toch niet iets inventiefs kunnen maken. Maar je droomt zo'n beetje van alles wat je niet maken kan. Dat spreekt tot de verbeelding.</p>
+            <p>Dat is zelfs met mij en meisjes zo. Over het algemeen vind ik alleen de meisjes leuk die ik niet krijgen kan. Als het op een gegeven moment realiteit wordt, dan haak ik vaak af.</p>
+            <p>Is best wel persoonlijk wat ik deel. Maar het is wel zo.</p>
+            <p>Alsof ik iemand ben die gemaakt is voor hoofse liefde. Daar lijkt het wel soms op. Ik weet niet wat het anders is. Het is net alsof een vrouw buiten bereik voor mij moet zijn.</p>
+            <p>Ach ja, dat alleen projecten waarbij mijn verbeeldingskracht zich genoeg aanspreekt... Of als een queeste, las ik nou net. In dienst vòòr een vrouw. Dan zou het wel kunnen. Dat zou ik wel leuk vinden.</p>
+            <p>Nou, ik weet het niet. Maar het is voedsel tot nadenken. Food for thought. Bij deze dus mijn update, ik vond het raar om niks te laten weten.</p>
+            <p>Het is nog niet helemaal dood, ICT, bij mij. Maar het komt jammergenoeg wel in de buurt.</p>
+            </article>
+        <div id="pages">
+            <a 
+             class="paginaBlog">Pag. </a><a 
+             class="paginaBlog" href="blog1">1</a><a 
+             class="paginaBlog" href="blog2">2</a><a
+             class="paginaBlog" href="blog3">3</a><a 
+             class="paginaBlog" href="blog4">4</a><a 
+             class="paginaBlog" href="blog5">5</a><a 
+             class="paginaBlog" href="blog6">6</a><a 
+             class="paginaBlog" href="blog7">7</a><a 
+             class="paginaBlog" href="blog8">8</a>
+            <a style="color: black;">></a>
+        </div>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <aside>
+        <h5>Januari 2025</h5>
+        <h5>Februari 2025</h5>
+        <h5>Maart 2025</h5>
+        <h5>April 2025</h5>
+        <h5>Mei 2025</h5>
+        <h5>Juni 2025</h5>
+        <h5>Juli 2024</h5>
+        <h5>Augustus 2024</h5>
+        <h5>September 2024</h5>
+        <h5>Oktober 2024</h5>
+        <h5>November 2024</h5>
+        <h5>December 2024</h5>
+    </aside>
+</body>
+</html>

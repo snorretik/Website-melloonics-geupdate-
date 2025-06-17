@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/blog.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a id="currentLink" href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>Dinsdag 10 juni 2025</h3>
+            <p>Oké, vandaag heb ik nieuws gekregen over mijn beschut werk. Wanneer ik aan de slag kan. En het is??? Augustus. Eén augustus kan ik beginnen.</p>
+            <p>Dat is een beetje een tegenvaller, zeg ik eerlijk. Maar ja. Intussen probeer ik me af en toe ook nog op ICT te richten. Maar het gaat moeizaam. Heel moeizaam.</p>
+            <p>Weet je wat het probleem ook is?? Het gaat op kruiptempo. En je zit in een soort tunnel, zonder licht aan het einde. En je kruipt daar doorheen. En je ziet niks. En weet je wat het erge is?? Soms zijn er bochten. En het kan precies zo zijn dat na nog een enkele bocht het licht vlakbij is. Maar dat het afgeschermd was achter een hoek.</p>
+            <p>Intussen kruip je daar. En moet je soms zelfs terug. En je weet ongeveer hoe ver je was, en waar je weer verder moet. Maar het houdt niet op.</p>
+            <p>Dat is het vervelende.</p>
+            <p>Het liefst ga je alleen tunnels in waar je bij voorbaat al licht aan het einde kan zien. Anders, ga er niet in! Is mijn advies.</p>
+            <p>Begin niet ergens aan, waar je het einde niet van kunt zien. Of maak het zichtbaar voor jezelf, doe schattingen. Zoiets. Probeer hoop te houden. Want het is zo dodelijk vermoeiend om door die stof heen te gaan, niet wetende hoeveel onbekende dingen je nog gaat tegenkomen.</p>
+            <p>Het houdt maar niet op, ik zeg het je. Het had allang over moeten zijn. Ik had er allang een keer uit moeten komen. Minstens 1 keer.</p>
+            <p>In plaats daarvan moet ik elke keer terug. Om weer te beginnen waar ik gebleven was. Het kost zóveel moeite. Het is niet normaal.</p>
+            <p>Kruipend ja. Maar in ieder geval is daar augustus. Waarop ik een alternatief heb. Dat was de update, dankjewel.</p>
+            </article>
+        <div id="pages">
+            <a 
+             class="paginaBlog">Pag. </a><a 
+             class="paginaBlog" href="blog1">1</a><a 
+             class="paginaBlog" href="blog2">2</a><a
+             class="paginaBlog" href="blog3">3</a><a 
+             class="paginaBlog" href="blog4">4</a><a 
+             class="paginaBlog" href="blog5">5</a><a 
+             class="paginaBlog" href="blog6">6</a><a 
+             class="paginaBlog" href="blog7">7</a><a 
+             class="paginaBlog" href="blog8">8</a>
+            <a style="color: black;">></a>
+        </div>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <aside>
+        <h5>Januari 2025</h5>
+        <h5>Februari 2025</h5>
+        <h5>Maart 2025</h5>
+        <h5>April 2025</h5>
+        <h5>Mei 2025</h5>
+        <h5>Juni 2025</h5>
+        <h5>Juli 2024</h5>
+        <h5>Augustus 2024</h5>
+        <h5>September 2024</h5>
+        <h5>Oktober 2024</h5>
+        <h5>November 2024</h5>
+        <h5>December 2024</h5>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steen papier schaar</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/onDisplayStyle.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <div id="floatLinkBack"><a href="index">Back to Page</a></div>
+    <div id="gameDiv">
+        <div id="input">
+        <h1>Welkom bij Steen Papier Schaar:</h1>
+
+        <form id="playerChoice">
+            <label><input type="radio" value="steen" name="game" checked>Steen</label>
+            <label><input type="radio" value="papier" name="game">Papier</label>
+            <label><input type="radio" value="schaar" name="game">Schaar</label>
+        </form>
+        </div>
+        <br>
+        <div id="output">
+            <button id="gameButton">Play!</button>
+            <label id="computerOutput">Hier geeft de computer aan wat zijn keuze is geweest.</label>
+            <label id="result">Heb je gewonnen, verloren of misschien gelijk gespeeld? Dat staat hier.</label>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='javascript/onDisplayScript.js') }}"></script>
+</body>
+</html>

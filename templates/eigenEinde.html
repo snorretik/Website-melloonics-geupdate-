@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/artikelen.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>"Je eigen einde niet halen"</h3>
+            <p>Ik wilde hier kort een stukje over schrijven. Dit is een ervaring van mij geweest gedurende mijn periode in mijn Wajong. Waarin ik niet wist wat ik aan moest met de tijd.</p>
+            <p>"De tijd doden", is een uitdrukking. Nou laat ik je zeggen, het kan echt een monster van een ding zijn. Het is een beest als het ware wat steeds opnieuw de kop opsteekt.</p>
+            <p>Hij gaat niet weg! Elke seconde van de dag is ie aanwezig om jou met de neus op de feiten te drukken dat je niks te doen hebt, en dat je leeft.</p>
+            <p>En dat er geen ontsnappen aan is. En dat als je denkt wel een middel te hebben gevonden waarin je kan ontsnappen, dan wordt je leven zowaar nog erger.</p>
+            <p>Bewustzijn. Het heeft er allemaal mee te maken. En op de klok kijken, de hele dag door.</p>
+            <p>Dat kan dus zover gaan als dat je gewoon het gevoel krijgt dat je je eigen einde niet meer haalt. Je bent dan ergens depressief. Je zou het leven over willen slaan.</p>
+            <p>Maar er is geen ontkomen aan. Je bent er. En je verveelt je. Maar er is niks. Er is geen houvast. Geen dagbesteding vaak ook niet, nog niet. Niks.</p>
+            <p>Ik liep toen rondjes in mijn huiskamer om mijn bank heen, cirkelend. Ik was wanhopig! Ik dacht zo kan ik de dag toch niet door?? Maar ik wist niks! Ik had geen inspiratie.</p>
+            <p>Ik was eigenlijk ook alleen. Ik kon niet echt bepaald afspreken de hele tijd met iemand. Wat ga je dan doen??</p>
+            <p>Soms ga je maar op bed liggen. Dat is iets wat ik toen nog niet kon. Je moet zeker niet onder je dekens gaan liggen, want dan worden je kleren muf.</p>
+            <p>Je moet je ook niet omkleden óm onder de dekens te gaan liggen (midden op de dag), want je aankleden en klaar maken voor de dag kan juist activerend werken. Je dingen hebben gedaan.</p>
+            <p>Ik had ook geen bank waar ik even op kon liggen, vanwege de vorm van de bank destijds.</p>
+            <p>Je kan hooguit ergens gaan zitten. Nou echt, wanhoop nabij. Voor wie dit kent?? Dan weet je dat dit een nachtmerrie is.</p>
+            <p>Maar ik ben het dus letterlijk gaan zien als een angst om je eigen einde niet te halen. Alsof je van te voren, voordat je de eindstreep hebt bereikt, al dood neer valt van vermoeidheid. Terwijl, dat zou je einde dan toch zijn?</p>
+            <p>Toch is er een angst, dat al vast staat dat je 80 jaar wordt. En je dat moet zien te halen, die tijd. Mijn hemel. Alsof je dat nog vol moet zien te houden.</p>
+            <p>Daar komt het vandaan, en ik wilde het gewoon even woorden geven. Het is een fenomeen.</p>
+            <p>Bang zijn je eigen einde niet (meer) te halen. Tekort te schieten. Terwijl dat zou dan toch je einde zijn?? Dat. De angst dat dat dan toch je einde nog niet is.</p>
+            <p>Het leven als slavendrijver.</p>
+        </article>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+</body>
+</html>

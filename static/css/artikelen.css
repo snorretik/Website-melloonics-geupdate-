@@ -1,0 +1,145 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 400px 400px 200px;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "section section section";
+}       
+
+img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+}
+
+header {
+    grid-area: header;
+}
+
+h3 {
+    font-family:'Courier New', Courier, monospace;
+    margin: 9px;
+    padding: 9px;
+}
+
+#container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+    padding-bottom: 20px;
+    grid-area: main;
+}
+
+#currentLink {
+    color: white;
+}
+
+#navigationDiv {
+    width: 950px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px auto 15px auto;
+    background-color: grey;
+
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(230, 255, 230);
+    font-size: 16px;
+    padding: 1px 6px 1px 6px;
+    margin: 1px 1px 1px 1px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    padding: 1px 6px 1px 6px;
+    margin: 1px 1px 1px 1px;
+}
+
+.dropdown a {
+    color: rgb(230, 255, 230);
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    width: 190px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.dropDownContent a {
+    text-align: left;
+    color: rgb(230, 255, 230);
+    padding: 2px;
+    margin: 2px;
+}
+
+.droplabel:hover {
+    color: white;
+}
+
+.dropDownContent a:hover {
+    color: black;
+}
+
+.linkInc:hover {
+    color: black;
+}
+
+#currentLink:hover {
+    color: black;
+}
+
+.dropdown:hover .dropDownContent{
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-family:'Courier New', Courier, monospace;
+    width: 520px;
+    margin: 0px auto 19px auto;
+}
+
+section {
+    background-color: rgb(225, 225, 225);
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    border-style: solid;
+    border-width: 1px;
+
+    grid-area: section;
+}
+
+#contactFormulier {
+    width: 320px;
+    margin: auto;
+}
+
+input {
+    width: 220px;
+}

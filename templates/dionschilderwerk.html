@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/dionschilderwerk.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <div id="floatLinkBack"><a href="index">Back to Page</a></div>
+    <div id="topPage">
+        <H1>Dion Schilderwerk</H1>
+    </div>
+
+    <div id="venster1">
+        <div id="linksHelft">
+            <div id="vak1">
+                <h4>vak 1</h4>
+            </div>
+            <div id="bundel">
+                <div id="vak2">
+                    <h4>vak 2</h4>
+                </div>
+                <div id="vak3">
+                    <h4>vak 3</h4>
+                </div>
+            </div>
+            <div id="divButton">
+                <button id="button1">
+                    <a>Buiten</a>
+                </button>
+            </div>
+        </div>
+        <div id="rechtsHelft">
+            <div id="vak4">
+                <h4>vak 4</h4>
+            </div>
+        </div>
+    </div>
+    <div id="venster2">
+        <div id="rechtsHelft">
+            <div id="vak5">
+                <h4>vak 5</h4>
+            </div>
+        </div>
+        <div id="linksHelft">
+            <div id="vak6">
+                <h4>vak 6</h4>
+            </div>
+            <div id="bundel">
+                <div id="vak7">
+                    <h4>vak 7</h4>
+                </div>
+                <div id="vak8">
+                    <h4>vak 8</h4>
+                </div>
+            </div>
+            <div id="divButton2">
+                <button id="button2">
+                    <a>Binnen</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='javascript/myscript.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+h1 {
+    margin: auto;
+}
+
+#field a {
+    margin: 10px;
+    padding: 20px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+
+    background-color: burlywood;
+}
+
+#floatLinkBack {
+    background-color: black;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#floatLinkBack a {
+    color: lightgrey;
+}
+
+#floatLinkBack:hover a {
+    color: white
+}
+
+#sudokuPanel {
+    display: flex;
+    flex-direction: row;
+}
+
+#tekstStuk {
+    display: inline-block;
+    width: 750px;
+}
+
+.boxes {
+    width: 225px;
+    height: 225px;
+}
+
+#field {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+    display: grid;
+    align-content: auto;
+}
+
+.row {
+    width: 650px;
+
+    display: flex;
+    justify-content: left;
+}
+
+.rowInRow {
+    margin: 50px;
+}
+
+#controlPanel {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    margin-top: 100px;
+}
+
+#selectingCells {
+    display: flex;
+    flex-direction: column;
+    
+    width: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#buttonDiv {
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#readButton {
+    width: 100%;
+}
+
+#runButton {
+    margin-top: 10px;
+    width: 100%;
+}

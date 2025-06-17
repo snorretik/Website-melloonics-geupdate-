@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8">
+
+    <link href="{{ url_for('static', filename='css/blog.css') }}" rel="stylesheet" type="text/css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-947E34PLM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-947E34PLM2');
+</script>
+<body>
+    <header id="topDiv">
+        <img src="{{ url_for('static', filename='images/afbeelding website banner.jpg') }}" alt="welcome image">
+        <nav id="navigationDiv">
+            <a href="index" class="linkInc">Home</a>
+            <div class="dropdown">
+                <a class="droplabel">Portfolio Links</a>
+                <div class="dropDownContent">
+                    <a href="onDisplay">Voorbeeld Functionaliteit</a>
+                    <a href="dionschilderwerk">Dion Schilderwerk</a>
+                    <a href="sudokuProject">Sudoku Oplosser</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="droplabel">Artikelen</a>
+                <div class="dropDownContent">
+                    <a href="eigenEinde">"Eigen einde niet halen"</a>
+                    <a href="goedeDoelen">"Goede doelen steunen"</a>
+                    <a href="overalIsGif">"Overal is gif"</a>
+                    <!--<a href="eindigheid.html">"Eindig- en oneindigheid"</a>-->
+                </div>
+            </div>
+            <a id="currentLink" href="blog1" class="linkInc">Blog</a>
+            <a href="overMij" class="linkInc">Over mij</a>
+        </nav>
+    </header>  
+    <main id="container" role="main">
+        <article>
+            <h3>Zondag 11 mei 2025</h3>
+            <p>Oké hallo mensen. Ik heb eindelijk nieuws omtrent werk. Ik ga binnenkort op een sociale werkplaats beginnen, beschut werk, bij een bedrijf genaamd WVS.</p>
+            <p>Woensdag word ik er al voor aangemeld via de gemeente. En dan kan ik eindelijk aan de gang. Want ik heb heel lang langs de zijlijn gestaan.</p>
+            <p>Weinig werkritme, het werkritme dat ik het verkregen via dagbesteding. Het was allemaal heel miniem.</p>
+            <p>Tegelijkertijd ben ik ook weer een post tegengekomen over iemand die wetenschappelijk programmeerde met de programmeertaal python. En die niet aan de bak kwam.</p>
+            <p>Want in plaats van een python programmeur, vragen ze een one-man-army. Ik weet niet of je weet wat dat is? Maar dan moet iemand dus alles tegelijk kunnen.</p>
+            <p>Geen zwitsers zakmes meer?? Maar een one-man-army. Dat is daar nog eens de overtreffende trap van. Terwijl een zwitsers zakmes is al heel veel.</p>
+            <p>Maar je krijgt dus blijkbaar de hoofdprijs betaald als je al die honderden technologiën allemaal al eens gebruikt hebt. En echt waar, het zijn er zoveel.</p>
+            <p>En hoogstwaarschijnlijk allemaal ook zo triviaal. Maar begin er maar eens aan. Het is echt hoofdpijn werk. Maar daar krijg je dus iets voor.</p>
+            <p>Ik ben al een tijdje vastgelopen op backend programmeren. Wat daar allemaal voor nodig is, ugh. Om dat in de praktijk werkende te krijgen?? In plaats van slechts theoretisch?? Dat leren ze je ook niet.</p>
+            <p>Echt verschrikkelijk.</p>
+            <p>Al die technologiën die je het leven makkelijker moeten maken, allemaal bij elkaar. Maken voor een verdomd lastige baan. Zie er maar eens doorheen te ploegen.</p>
+            <p>Maar ja, ik ga het binnenkort nog eens een poging geven. Want ik weet dus nu wat er gevraagd wordt. Als ik dit kan, ga ik misschien van werkloos zijnde naar 4000 per maand minimaal.</p>
+            <p>Dat is wat er geclaimt wordt in ieder geval. Ook misschien de rede waarom mensen nog steeds mijn blog in de gaten houden. Want ik heb wel lezers.</p>
+            <p>Maar laten we eerlijk zijn. Mijn blog is hooguit peptalk voor mezelf gecomineerd met redenen waarom dit werk zo lastig is. Bijna een klaaglied.</p>
+            <p>Ik probeer me er doorheen te werken. Maar je moet zoveel details weten. Allemaal heel abstract. Niemand die er zin in heeft, behalve ik misschien.</p>
+            <p>Iemand anders had misschien al lang opgegeven. Ik ben me hier bewust van, en ik ga met dat bewustzijn nóg een poging doen. Ergens komende twee weken denk ik. En anders blog ik er wel weer over.</p>
+            <p>Plus ik heb mei weer geupdate. Iemand dat gezien?? Ik moet nu nog elke keer handmatig 2025 neerzetten op de plek van het jaartal bij de "kalender" hiernaast.</p>
+            <p>Ooit was het de bedoeling om individuele blogposts daar uit te sorteren per kalendermaand. Voor elk jaar. En de mogelijkheid om terug te scrollen. In plaats van slechts 8 pagina's.</p>
+            <p>Maar dat is het allang niet meer. Nu is het gewoon iets geworden wat moet kloppen. Tegen de tijd dat we in mei 2025 zitten wil je geen mei 2024 meer lezen.</p>
+            <p>Misschien moet ik gewoon dat eens automatiseren. Want projecten verzinnen lukt toch niet. Daarom maar uit eigen ervaring gaan werken. De problemen die ik(!) tegen kom.</p>
+            <p>Met andere worden, ik heb weer goede voornemens! Bedankt voor het lezen en ik hoop nog steeds binnen twee weken updates uit te brengen. Groeten!</p>
+            </article>
+        <div id="pages">
+            <a 
+             class="paginaBlog">Pag. </a><a 
+             class="paginaBlog" href="blog1">1</a><a 
+             class="paginaBlog" href="blog2">2</a><a
+             class="paginaBlog" href="blog3">3</a><a 
+             class="paginaBlog" href="blog4">4</a><a 
+             class="paginaBlog" href="blog5">5</a><a 
+             class="paginaBlog" href="blog6">6</a><a 
+             class="paginaBlog" href="blog7">7</a><a 
+             class="paginaBlog" href="blog8">8</a>
+            <a style="color: black;">></a>
+        </div>
+    </main>
+    <section id="contactDeel">
+        <form id="contactFormulier" action="php/mail.php" method="POST">
+            Naam: <input name="naam" type="text"/> <br>
+            Email: <input name="emailAdress" type="text"/> <br>
+            <textarea cols="40" name="vraag" rows="7">Uw vraag: </textarea> <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <aside>
+        <h5>Januari 2025</h5>
+        <h5>Februari 2025</h5>
+        <h5>Maart 2025</h5>
+        <h5>April 2025</h5>
+        <h5>Mei 2025</h5>
+        <h5>Juni 2025</h5>
+        <h5>Juli 2024</h5>
+        <h5>Augustus 2024</h5>
+        <h5>September 2024</h5>
+        <h5>Oktober 2024</h5>
+        <h5>November 2024</h5>
+        <h5>December 2024</h5>
+    </aside>
+</body>
+</html>
