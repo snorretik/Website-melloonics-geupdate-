@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/favicon.ico", methods=["GET"])
+def favicon():
+    return app.send_from_directory("static/images", "favicon.ico")
+
 @app.route("/index.html", methods=["GET"])
 def index2():
     return render_template("index.html")
