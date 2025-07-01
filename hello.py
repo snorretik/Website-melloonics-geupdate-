@@ -74,4 +74,5 @@ def blog8():
 def overMij():
     return render_template("overMij.html")
 
-
+if __name__ == "__main__":
+    app.run(port=8000)
